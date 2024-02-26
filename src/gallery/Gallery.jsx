@@ -47,6 +47,7 @@ function Gallery() {
         console.log(response.data);
         setTeslaCars(response.data.body);
         setSelectedCar(response.data.body[0]);
+        setSelectedCarIndex(0);
         setSelectedColor(response.data.body[0].colors[0]);
       } catch (error) {
         console.error("Error fetching Tesla car data:", error);
