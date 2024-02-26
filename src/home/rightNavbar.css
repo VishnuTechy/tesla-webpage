@@ -1,0 +1,50 @@
+.right-navbar td{border-width: thin;
+    padding: 20px;
+    text-transform: uppercase;
+    /* border-style: solid ;
+    border-color: black ; */
+   border-radius: 8px;
+   color:#edf2f4;
+    text-align: center;
+}
+.right-navbar td:hover{
+    background-color: #8d99ae;
+    color:#ffffff;
+    cursor: pointer;
+}
+.right-navbar td:active {
+            background-color: #687285;
+        }
+.right-navbar {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+    padding: 55px 20px;
+    z-index: 2000;
+    position: fixed;
+    top: 0;
+    right: -320px;
+    bottom: 0;
+    width: 200px; /* adjust this width to your preference */
+    background-color: #2b2d42; /* change this to the background color you want */
+    box-shadow: 0 12px 15px rgba(53, 52, 52, 0.8); /* add a box shadow for a raised effect */
+  }
+
+  .right-navbar table{
+    width: 100%;
+  }
+  .right-navbar img {
+    width: 17px;
+    height: 17px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+
+  .right-navbar .horizontal-align {
+    display: flex;
+    align-items: center;
+  }
+  .right-navbar .horizontal-align img {
+    margin-right: 15px;
+  }
+  

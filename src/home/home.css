@@ -1,0 +1,59 @@
+/* body, html { height: 90%; } */
+.background path {
+  fill: #db2424a1;
+  /* background-image: linear-gradient(to right, red , yellow); */
+}
+.car {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  position: relative;
+  background-color: #eae2b78a;
+  overflow: hidden; /* Add this to hide content outside the .car div */
+}
+.car img {
+  width: 46%;
+}
+.foreground {
+  position: relative; /* or static */
+  z-index: 1;
+}
+
+.background {
+  position: absolute; /* or fixed */
+  top: -50%;
+  left: 50%;
+  /* width: 100%; */
+  height: calc(200% - 100px);
+  /* background-color: #ccc; */
+  z-index: -20;
+}
+#bgStrip {
+  position: absolute; /* Add this to position the SVG inside .car */
+  left: 30%;
+  top: 50%; /* Adjust the top value to position the SVG as desired */
+  transform: translateY(-50%); /* Add this to vertically center the SVG */
+}
+
+#year p{
+  margin: -50px;
+  opacity: 0.12;
+  font-family: "Oswald", sans-serif;
+  font-size: 15em;
+  text-shadow: 0 0 48px rgba(0, 0, 0, 1);
+}
+#contact {
+  transform: rotate(270deg);
+  margin: 0px 0px 0px -470px;
+  font-size: 25px;
+  transition: all 0.4s ease;
+}
+#contact td {
+  padding-right: 50px;
+}
+#contact:hover{
+  /* margin: 0px 0px 0px -160px; */
+  transition: all 0.4s ease;
+  cursor: pointer;
+}

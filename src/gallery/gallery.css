@@ -1,0 +1,187 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.background-video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background-video {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 3em;
+}
+
+.content p {
+  font-size: 1.5em;
+}
+#upperBox {
+  background-color: rgb(16 53 104 / 63%);
+  color:white; /* White background */
+  padding: 20px;
+  width:60%;
+  margin:2%;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.search {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  height: 4vh;
+  width: 15vw;
+}
+
+
+.selectedCar {
+  text-align: center;
+  position: relative;
+  height: 60vh;
+}
+
+.colorSelector {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.colorSelector label {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.colorSelector select {
+  width: 150px;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #2b2d42;
+  color: #fff;
+}
+
+
+.selectedCar img {
+  height:300px;
+  width:500px;
+  margin-bottom: 10px;
+}
+
+.carList {
+  display: flex;
+  gap: 20px;
+}
+
+.carList > div {
+  cursor: pointer;
+}
+
+.cars {
+  height:50vh;
+  width:50vw
+}
+
+.description {
+  border: 1px solid #ccc;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.descriptionContent h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.descriptionContent p {
+  font-size: 16px;
+}
+
+#lowerBox {
+  background-color: rgb(16 53 104 / 63%);
+  color:white; /* Background color for the lower box */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 80%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Elevation effect */
+  overflow-x: auto; /* Allow horizontal scrolling */
+  margin-bottom: 2vh;
+  min-height: 43vh;
+}
+
+.carList {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px; /* Add some padding at the bottom for space */
+}
+
+.carCard {
+  width: 250px; /* Adjust card width as needed */
+  border: 1px solid #ddd;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Elevation effect */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.carCard img {
+  width: 100%; /* Make the image fill the entire width of the card */
+  height: 70%; /* Set a fixed height for the image */
+  object-fit: cover; /* Ensure the image covers the entire space */
+}
+
+.carInfo {
+  padding: 10px;
+}
+
+.carInfo h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.carInfo p {
+  margin: 0;
+  font-size: 14px;
+}
+.noResults {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+}

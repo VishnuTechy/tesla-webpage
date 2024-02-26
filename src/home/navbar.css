@@ -1,0 +1,36 @@
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #2b2d42, #e8e2d8);
+    top: -0.8%;
+    z-index: 10000;
+    opacity: 1;
+    height:50px;
+  }
+  
+  .nav img {
+    padding-inline: 10px;
+    order: 0; /* make the image appear first */
+  }
+  
+  .nav h3 {
+    margin: 0;
+    order: 1; /* make the h3 appear second */
+  }
+  
+  .nav h4 {
+    margin: 0;
+    order: 2; /* make the h4 appear last */
+  }
+  .nav h4:hover{
+    cursor: pointer;
+  }
+  .prcFont{
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Open Sans', sans-serif;
+  }
+.navMenuIcon,.navMenu{ font-size: 20px; float: right;}
+.navMenuIcon{ rotate: 90deg;padding:0 10px 0 10px;}
+.settings{width:20px;}
