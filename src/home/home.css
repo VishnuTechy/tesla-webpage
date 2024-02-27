@@ -43,17 +43,3 @@
   font-size: 15em;
   text-shadow: 0 0 48px rgba(0, 0, 0, 1);
 }
-#contact {
-  transform: rotate(270deg);
-  margin: 0px 0px 0px -470px;
-  font-size: 25px;
-  transition: all 0.4s ease;
-}
-#contact td {
-  padding-right: 50px;
-}
-#contact:hover{
-  /* margin: 0px 0px 0px -160px; */
-  transition: all 0.4s ease;
-  cursor: pointer;
-}
